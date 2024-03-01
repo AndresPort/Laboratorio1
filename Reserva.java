@@ -11,32 +11,32 @@ public class Reserva{
 	public void set_cedula_docente(int cel_doc){
 		cedula_docente = cel_doc ;
 	}
-	public void setMarca(int inventario_computo){
+	public void set_num_inv_computo(int inventario_computo){
 		num_inv_computo = inventario_computo ;
 	}
-	public void setColor(int fech){
+	public void set_fecha(int fech){
 		fecha= fech;
 	}
-	public void setCantTotalSerie(int h_recog){
+	public void set_hora_recogida(int h_recog){
 		hora_recogida= h_recog;
 	}
-	public void setnumeroSerie(int h_ent){
+	public void set_hora_entrega(int h_ent){
 		hora_entrega= h_ent;
 	}
 
-	public int getAnhoSerie(){
+	public int getcedula_docente(){
 		return cedula_docente;
 	}
-	public int getMarca(){
+	public int getnum_inv_computo(){
 		return num_inv_computo;
 	}
-	public int getColor(){
+	public int getfecha(){
 		return fecha;
 	}
-	public int getCantTotalSerie(){
+	public int gethora_recogida(){
 		return hora_recogida;
 	}
-	public int getNumeroSerie(){
+	public int gethora_entrega(){
 		return hora_entrega;
 	}	
 }
