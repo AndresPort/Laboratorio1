@@ -16,14 +16,14 @@ public class Usa_rellenar_reserva{
 
 			Reserva la_verdadera_reserva= new Reserva();
 
-			String cedula_docente;
-			String num_inventario_computo;
+			int cedula_docente;
+			int num_inventario_computo;
 	 		String fecha;
 	 		String hora_recogida;
 	 		String hora_entrega;
 
-			cedula_docente= JOptionPane.showInputDialog(null,"Ingrese la cedula del docente (10 digitos)","Ingreso de Datos",1);
-			num_inventario_computo= JOptionPane.showInputDialog(null, "Ingrese el numero de inventario del equipo de computo ","Ingreso de Datos",1);
+			cedula_docente= Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la cedula del docente (10 digitos)","Ingreso de Datos",1));
+;			num_inventario_computo= Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el numero de inventario del equipo de computo ","Ingreso de Datos",1));
 			fecha= JOptionPane.showInputDialog(null, "Ingrese la fecha (dd/mm/aa)","Ingreso de Datos",1);
 			hora_recogida= JOptionPane.showInputDialog(null, "Ingrese la hora recogida (formato 24hr)","Ingreso de Datos",1);
 			hora_entrega=  JOptionPane.showInputDialog(null, "Ingrese la hora de entrega (formato 24hr)","Ingreso de Datos",1);

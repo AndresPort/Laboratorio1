@@ -1,7 +1,7 @@
 public class Reserva{
 	//Atributos
-	private String cedula_docente;
-	private String num_inventario_computo;
+	private int cedula_docente;
+	private int num_inventario_computo;
 	private String fecha;
 	private String hora_recogida;
 	private String hora_entrega;
@@ -14,11 +14,11 @@ public class Reserva{
 
 	//Metodos set
 
-	public void set_cedula_docente(String _cedula_docente){
+	public void set_cedula_docente(int _cedula_docente){
 		this.cedula_docente = _cedula_docente ;
 	}
 
-	public void set_num_inventario_computo(String _num_inventario_computo){
+	public void set_num_inventario_computo(int _num_inventario_computo){
 		this.num_inventario_computo = _num_inventario_computo ;
 	}
 
@@ -36,11 +36,11 @@ public class Reserva{
 
 	//Metodos get
 
-	public String get_cedula_docente(){
+	public int get_cedula_docente(){
 		return cedula_docente;
 	}
 
-	public String get_num_inventario_computo(){
+	public int get_num_inventario_computo(){
 		return num_inventario_computo;
 	}
 
