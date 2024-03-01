@@ -1,42 +1,42 @@
 public class Reserva{
 
-	private int cedula_docente;
-	private int num_inv_computo;
-	private int fecha;
-	private int hora_recogida;
-	private int hora_entrega;
+	private String cedula_docente;
+	private String num_inv_computo;
+	private String fecha;
+	private String hora_recogida;
+	private String hora_entrega;
 
 	public Reserva (){}
 
-	public void set_cedula_docente(int cel_doc){
+	public void set_cedula_docente(String cel_doc){
 		cedula_docente = cel_doc ;
 	}
-	public void set_num_inv_computo(int inventario_computo){
+	public void set_num_inv_computo(String inventario_computo){
 		num_inv_computo = inventario_computo ;
 	}
-	public void set_fecha(int fech){
+	public void set_fecha(String fech){
 		fecha= fech;
 	}
-	public void set_hora_recogida(int h_recog){
+	public void set_hora_recogida(String h_recog){
 		hora_recogida= h_recog;
 	}
-	public void set_hora_entrega(int h_ent){
+	public void set_hora_entrega(String h_ent){
 		hora_entrega= h_ent;
 	}
 
-	public int getcedula_docente(){
+	public String getcedula_docente(){
 		return cedula_docente;
 	}
-	public int getnum_inv_computo(){
+	public String getnum_inv_computo(){
 		return num_inv_computo;
 	}
-	public int getfecha(){
+	public String getfecha(){
 		return fecha;
 	}
-	public int gethora_recogida(){
+	public String gethora_recogida(){
 		return hora_recogida;
 	}
-	public int gethora_entrega(){
+	public String gethora_entrega(){
 		return hora_entrega;
 	}	
 }
