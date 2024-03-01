@@ -4,7 +4,7 @@ public class Iniciado{
 
 	public static void main(String [] args){
 		
-		Usa_rellenar_reserva mini_colleccion= new Usa_rellenar_reserva();
+		Usa_rellenar_reserva mini_coleccion= new Usa_rellenar_reserva();
 
 		String menu= "Bienvenido al sistema de reservas, que desea hacer?\n"+
 				"1: Agregar una reserva\n"+
@@ -17,9 +17,9 @@ public class Iniciado{
 			opcion= Integer.parseInt(JOptionPane.showInputDialog(null,menu, "Menú de Opciones",1));
 
 			switch(opcion){
-				case 1: mini_colleccion.agregarAuto();
+				case 1: mini_coleccion.agregarAuto();
 					break;
-				case 2: mini_colleccion.mostrar();
+				case 2: mini_coleccion.mostrar();
 					break;
 				///case 3: mini_colleccion.listarAutos();
 					///break;

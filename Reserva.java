@@ -1,42 +1,58 @@
 public class Reserva{
-
+	//Atributos
 	private String cedula_docente;
-	private String num_inv_computo;
+	private String num_inventario_computo;
 	private String fecha;
 	private String hora_recogida;
 	private String hora_entrega;
 
-	public Reserva (){}
+	//Metodos
 
-	public void set_cedula_docente(String cel_doc){
-		cedula_docente = cel_doc ;
-	}
-	public void set_num_inv_computo(String inventario_computo){
-		num_inv_computo = inventario_computo ;
-	}
-	public void set_fecha(String fech){
-		fecha= fech;
-	}
-	public void set_hora_recogida(String h_recog){
-		hora_recogida= h_recog;
-	}
-	public void set_hora_entrega(String h_ent){
-		hora_entrega= h_ent;
+	//Metodo constructor
+	public Reserva (){
 	}
 
-	public String getcedula_docente(){
+	//Metodos set
+
+	public void set_cedula_docente(String _cedula_docente){
+		this.cedula_docente = _cedula_docente ;
+	}
+
+	public void set_num_inventario_computo(String _num_inventario_computo){
+		this.num_inventario_computo = _num_inventario_computo ;
+	}
+
+	public void set_fecha(String _fecha){
+		this.fecha= _fecha;
+	}
+
+	public void set_hora_recogida(String _hora_recogida){
+		this.hora_recogida= _hora_recogida;
+	}
+
+	public void set_hora_entrega(String _hora_entrega){
+		this.hora_entrega= _hora_entrega;
+	}
+
+	//Metodos get
+
+	public String get_cedula_docente(){
 		return cedula_docente;
 	}
-	public String getnum_inv_computo(){
-		return num_inv_computo;
+
+	public String get_num_inventario_computo(){
+		return num_inventario_computo;
 	}
-	public String getfecha(){
+
+	public String get_fecha(){
 		return fecha;
 	}
-	public String gethora_recogida(){
+
+	public String get_hora_recogida(){
 		return hora_recogida;
 	}
-	public String gethora_entrega(){
+
+	public String get_hora_entrega(){
 		return hora_entrega;
 	}	
 }
