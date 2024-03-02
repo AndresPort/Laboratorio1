@@ -7,19 +7,40 @@ public class Computadores {
     //metodos
 
     //metodo constructor
-    public Computadores(String _marca, int _ano_compra, int _num_inventario_computo){
-        this.marca= _marca;
-        this.ano_compra=_ano_compra;
-        this.num_inventario_computo=_num_inventario_computo;
+    public Computadores(){
     } 
+
+    //metodos get
+
+    //metododo get marca
+    public String get_marca(){
+        return marca;
+    }
+
+    public int get_ano_compra(){
+        return ano_compra;
+    }
 
     //metodo get num_inventario_computo
     public int get_num_inventario_computo(){
         return num_inventario_computo;
     }
     
-    public String mostrar_datos(){
-        return ("La marca del computador es "+marca+", el computador fue comprado en el "+ano_compra+
-        " y el numero de inventario del computador es el "+num_inventario_computo);
+    //Metodos set
+
+    //set marca
+    public void set_marca(String _marca){
+        this.marca= _marca;
     }
+
+    //set ano de compra
+    public void set_ano_compra(int _ano_compra){
+        this.ano_compra=_ano_compra;
+    }
+
+    //set numero de el computador en el inventario
+    public void set_num_inventario_computo(int _num_inventario_computo){
+        this.num_inventario_computo=_num_inventario_computo;
+    }
+
 }
