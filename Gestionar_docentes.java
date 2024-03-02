@@ -27,8 +27,8 @@ public class Gestionar_docentes {
 
             if (num_cedula_del_docente_ingresado==un_docente.get_numero_de_cedula()) {
                 coleccion_de_docentes += "El nombre del docente es "+un_docente.get_nombres()+
-             " Los apellidos del docente son  "+un_docente.get_apellidos()+
-             "El curso que el docente imparte es "+un_docente.get_curso()+
+             ", Los apellidos del docente son  "+un_docente.get_apellidos()+
+             ", El curso que el docente imparte es "+un_docente.get_curso()+
             " y el numero de inventario del computador es el "+un_docente.get_numero_de_cedula()+"\n";
             encontrado=true;
             }	

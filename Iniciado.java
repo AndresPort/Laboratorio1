@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class Iniciado{
 
 	public static void main(String [] args){
-		
+		Usa_gestionar_docentes coleccion_docentes= new Usa_gestionar_docentes();
 		Usa_rellenar_reserva mini_coleccion= new Usa_rellenar_reserva();
 		Usa_gestionar_computadores coleccion_computadores= new Usa_gestionar_computadores();
 
@@ -24,13 +24,14 @@ public class Iniciado{
 				case 2: mini_coleccion.mostrar();
 					break;
 
-				case 3: 
+				case 3: coleccion_docentes.agregar_datos_quemados();
+						coleccion_docentes.mostrar();
 						break;
 
 				case 4: coleccion_computadores.agregar_datos_quemados();
 						coleccion_computadores.mostrar();
 						break;
-						
+
 				default: 
 					JOptionPane.showMessageDialog(null,"Esa opción no es válida","Resultado",2);					 
 			}

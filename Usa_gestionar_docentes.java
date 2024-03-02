@@ -68,7 +68,7 @@ public class Usa_gestionar_docentes {
 
 		//Metodo para llamar a la clase Gestionar_reserva y mostrar los elementos de la lista de reservas
 		public void mostrar() {
-            int num_cedula= Integer.parseInt(JOptionPane.showInputDialog("Por favro ingrese el numero de de un profesor para ver su informacion: "));
+            int num_cedula= Integer.parseInt(JOptionPane.showInputDialog("Por favor ingrese el numero de de un profesor para ver su informacion: "));
 			JOptionPane.showMessageDialog(null, la_verdadera_coleccion.buscar_docente(num_cedula), "Resultado =", JOptionPane.INFORMATION_MESSAGE);
 		}
 }
