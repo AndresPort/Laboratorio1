@@ -17,17 +17,25 @@ public class Gestionar_computadores {
     }
 
     //Metodo para mostrar todos los elementos de la lista de reservas
-    public String mostrar_lista(){
-
+    public String buscar_computador(int num_inventario_computo_ingresado){
 		Computadores un_computador= new Computadores();
 		String coleccion_de_computadores="";
+        boolean encontrado=false;
 
-		for(int i=0; i<list_computadores.size(); i++){
+		for(int i=0; i<5; i++){
 			un_computador= list_computadores.get(i);
-			coleccion_de_computadores +=	"La marca del computador es "+un_computador.get_marca()+
-             "el computador fue comprado en el "+un_computador.get_ano_compra()+
-            " y el numero de inventario del computador es el "+un_computador.get_num_inventario_computo();
+
+            if (num_inventario_computo_ingresado==un_computador.get_num_inventario_computo()) {
+                coleccion_de_computadores +=	"La marca del computador es "+un_computador.get_marca()+
+             " el computador fue comprado en el "+un_computador.get_ano_compra()+
+            " y el numero de inventario del computador es el "+un_computador.get_num_inventario_computo()+"\n";
+            encontrado=true;
+            }	
 		}
+        if (encontrado== false){
+            coleccion_de_computadores= "El computador no existe";
+        }
+
 		return coleccion_de_computadores;
 
     }
